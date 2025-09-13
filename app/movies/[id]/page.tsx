@@ -1,9 +1,4 @@
-type Movie = {
-  _id: string;
-  title: string;
-  description: string;
-  rating: string;
-};
+import { Movie } from "@/app/components/MovieForm";
 
 async function getMovie(id: string): Promise<Movie> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies/${id}`, {
