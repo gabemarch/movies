@@ -1,4 +1,4 @@
-import MovieList from "./components/MovieList";
+import MovieFilter from "./components/MovieFilter";
 
 interface Movie {
   _id: string;
@@ -21,7 +21,8 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto">
-        <MovieList movies={movies} />
+        {/* <MovieList movies={movies} /> */}
+        <MovieFilter movies={movies} />
       </div>
     </div>
   );

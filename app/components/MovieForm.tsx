@@ -3,19 +3,19 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-type Movie = {
+export interface Movie {
   _id?: string;
   title: string;
   description: string;
   rating: string;
 };
 
-type Props = {
+interface MovieProps {
   initialData?: Movie | null;
   apiEndpoint: string;
 };
 
-export default function MovieForm({ initialData, apiEndpoint }: Props) {
+export default function MovieForm({ initialData, apiEndpoint }: MovieProps) {
   const router = useRouter();
   const [form, setForm] = useState<Movie>({
     title: "",
