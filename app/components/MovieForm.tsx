@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export interface Movie {
-  _id?: string;
+  id?: number;
   title: string;
   description: string;
   rating: string;
@@ -35,7 +35,7 @@ export default function MovieForm({ initialData, apiEndpoint }: MovieProps) {
     }
 
     const method = initialData ? "PUT" : "POST";
-    const url = initialData ? `${apiEndpoint}/${initialData._id}` : apiEndpoint;
+    const url = initialData ? `${apiEndpoint}/${initialData.id}` : apiEndpoint;
 
     await fetch(url, {
       method,

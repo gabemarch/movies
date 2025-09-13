@@ -2,13 +2,7 @@
 
 import { useState } from "react";
 import MovieList from "./MovieList";
-
-interface Movie {
-  _id: string;
-  title: string;
-  description: string;
-  rating: string;
-}
+import { Movie } from "./MovieForm";
 
 interface Props {
   movies: Movie[];
