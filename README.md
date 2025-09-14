@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Notes
+
+- I implemented the first version with crudcrud, but I exceeded the daily rate limit, so I rewrote the code to use Supabase.
+- I deployed the app on Vercel. You can check it out: https://movies-zeta-lake.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
