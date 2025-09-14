@@ -1,7 +1,6 @@
 import { supabase } from "@/app/lib/supabaseClient";
 import { NextResponse } from "next/server";
 
-
 export async function GET() {
   const { data, error } = await supabase.from("movies").select("*").order("id", { ascending: false });
 

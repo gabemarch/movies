@@ -9,7 +9,6 @@ async function getMovie(id: string): Promise<Movie> {
   return res.json();
 }
 
-// Props type for server component
 interface EditMoviePageProps {
   params: { id: string };
 }
@@ -21,7 +20,6 @@ export default async function EditMoviePage({ params }: EditMoviePageProps) {
 
   return (
     <div className="bg-background max-w mx-auto p-6 min-h-screen">
-      <h1 className="text-2xl font-bold mb-4">Edit Movie</h1>
       <MovieForm initialData={movie} apiEndpoint={`/api/movies`} />
     </div>
   );

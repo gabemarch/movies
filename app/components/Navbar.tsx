@@ -32,7 +32,6 @@ export default function Navbar() {
         </div>
       </nav>
           <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-            <h2 className="text-lg font-bold mb-4">Add New Movie</h2>
             <MovieForm apiEndpoint="/api/movies" />
           </Modal>
     </div>

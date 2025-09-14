@@ -1,12 +1,7 @@
 import MovieFilter from "./components/MovieFilter";
+import { Movie } from "./components/MovieForm";
 
-interface Movie {
-  _id: string;
-  title: string;
-  description: string;
-  rating: string;
-};
-
+// Fetch all movies from db
 async function getMovies(): Promise<Movie[]> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/movies`, {
     cache: "no-store",
@@ -20,8 +15,8 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto">
-        {/* <MovieList movies={movies} /> */}
+      <h1 className="text-white text-3xl font-bold p-3 px-6">Movies ({movies.length})</h1>
+      <div className="max-w-7xl mx-auto">
         <MovieFilter movies={movies} />
       </div>
     </div>

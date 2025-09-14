@@ -29,12 +29,11 @@ export default function MovieFilter({ movies }: Props) {
         >
           {ageOptions.map((age) => (
             <option key={age} value={age}>
-              {age === "All" ? "All ages" : `${age}+`}
+              {age === "All" ? "All ratings" : `${age}+`}
             </option>
           ))}
         </select>
       </div>
-
       {/* Movie list */}
       <MovieList movies={filteredMovies} />
     </div>
