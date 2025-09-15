@@ -8,6 +8,7 @@ interface Props {
   movies: Movie[];
 }
 
+//Filtered movie list
 export default function MovieFilter({ movies }: Props) {
   const [filter, setFilter] = useState<string>("All");
 

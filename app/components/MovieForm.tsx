@@ -16,6 +16,7 @@ interface MovieProps {
   apiEndpoint: string
 };
 
+// Form component for adding or editing movie
 export default function MovieForm({ initialData, apiEndpoint }: MovieProps) {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
@@ -60,7 +61,6 @@ export default function MovieForm({ initialData, apiEndpoint }: MovieProps) {
       ) : (
         <form
           onSubmit={handleSubmit}
-          className=""
         >
           <h2 className="text-2xl text-cinema-gold font-bold mb-6 text-center">
             {initialData ? "Edit Movie" : "Add Movie"}
