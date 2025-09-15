@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/app/lib/supabaseClient";
 
+// Dynamic route - CRUD functionalities
 export async function GET(
   req: Request,
   context: { params: Promise<{ id: string }> }

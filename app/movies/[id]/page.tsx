@@ -10,6 +10,7 @@ async function getMovie(id: string): Promise<Movie> {
   return res.json();
 }
 
+// Single movie detail page
 export default async function MovieDetailPage(context: { params: Promise<{ id: string }> }) {
   const params = await context.params;
   const { id } = params;

@@ -13,6 +13,7 @@ interface EditMoviePageProps {
   params: { id: string };
 }
 
+// Single movie edit page
 export default async function EditMoviePage({ params }: EditMoviePageProps) {
   const { id } = await params;
   // Server-side fetch

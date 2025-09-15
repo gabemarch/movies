@@ -13,7 +13,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
-      onClick={onClose} // close when clicking outside
+      onClick={onClose} // close when clicking outside of the Modal
     >
       <div
         className="relative bg-background w-full bg-card p-6 rounded-2xl shadow-lg max-w-md mx-auto mb-6 border border-border"
