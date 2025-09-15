@@ -7,6 +7,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+```bash
+clone the repository
+
+npm install
+```
+
 First, run the development server:
 
 ```bash
